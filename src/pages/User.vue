@@ -50,7 +50,8 @@
 
 <script>
 import UserBar from "../components/UserBar";
-
+import * as api from "../api/http"
+import {ElMessage} from "element-plus";
 export default {
   name: "User",
   components: {UserBar},
@@ -64,6 +65,34 @@ export default {
         type: "normal"
       }]
     }
+  },
+  methods: {
+    getAllUsers(){
+      api.getAllUsers().then(data => {
+        this.userList = [];
+        for (let item of data){
+          let type = "读者";
+          switch (item["type"]){
+            case 0: type = "管理员"; break;
+            case 1: type = "读者"; break;
+            case 2: type = "超级管理员";break;
+          }
+          this.userList.push({
+            id: item["id"],
+            name: item["name"],
+            address: item["address"],
+            identification: type,
+            type: "普通会员"
+          })
+        }
+      }).catch(error => {
+        console.log(error);
+        ElMessage.error(error);
+      })
+    }
+  },
+  mounted() {
+    this.getAllUsers();
   }
 }
 </script>

@@ -24,6 +24,10 @@ const routes = [
             {
                 path: "/user_list",
                 component: () => import("../pages/User")
+            },
+            {
+                path: "/userinfo",
+                component: () => import("../pages/UserInfo")
             }
         ]
     },

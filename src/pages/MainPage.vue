@@ -33,7 +33,7 @@
             <span>账号管理</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="user_list">信息维护</el-menu-item>
+            <el-menu-item index="userinfo">信息维护</el-menu-item>
             <el-menu-item index="borrow_and_lend">权限维护</el-menu-item>
           </el-menu-item-group>
         </el-submenu>

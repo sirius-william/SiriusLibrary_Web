@@ -65,7 +65,7 @@ export default {
       books: []
     }
   },
-  created() {
+  mounted() {
     let data = []
     network.getAllBooks().then(_data => {
       for (let item of _data) {

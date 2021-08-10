@@ -2,7 +2,8 @@
   <el-row :gutter="20" style="width:100%">
     <el-col :span="22">
       <div class="grid-content time">
-        <div>当前时间：{{ time }}</div>
+        <div>欢迎光临，{{$store.state.userName}}</div>
+        <div style="font-size:12px">当前时间：{{ time }}</div>
       </div>
     </el-col>
     <el-col :span="2">
@@ -11,11 +12,8 @@
           <el-avatar :size="50" :src="circleUrl"></el-avatar>
           <template #dropdown>
             <el-dropdown-menu>
-              <el-dropdown-item>黄金糕</el-dropdown-item>
-              <el-dropdown-item>狮子头</el-dropdown-item>
-              <el-dropdown-item>螺蛳粉</el-dropdown-item>
-              <el-dropdown-item disabled>双皮奶</el-dropdown-item>
-              <el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+              <el-dropdown-item @click="$router.push('/userinfo')">个人信息</el-dropdown-item>
+              <el-dropdown-item>退出登录</el-dropdown-item>
             </el-dropdown-menu>
           </template>
         </el-dropdown>

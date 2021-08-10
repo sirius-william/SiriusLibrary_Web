@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import * as cookies from "../utils/vue-cookies";
+import {ElMessage} from "element-plus";
 import * as api from "../api/http"
 export default {
   name: "loginPage",
@@ -41,15 +41,16 @@ export default {
   },
   methods: {
     submit(){
-      console.log(this.form.username + " " + this.form.password + " " + this.form.type);
       api.login(this.form.username, this.form.password, this.form.type).then(data => {
         this.$router.push("/main")
+      }).catch(error => {
+        let err = error.message === "Network Error" ? "网络错误，无法连接到服务器": "其他未知错误 :" + error.message
+        ElMessage.error({
+          message: err
+        })
       });
     }
   },
-  created() {
-    console.log(cookies.getCookies());
-  }
 }
 </script>
 

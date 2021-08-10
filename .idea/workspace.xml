@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2915d68-d220-4e43-8317-0569ce0149c6" name="Changes" comment="搭建基本框架，登录和查找书籍可简单使用">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ShowBooks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ShowBooks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/User.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,10 +43,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="E:/Program Files/nodejs/node.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,7 +60,10 @@
       <option name="presentableId" value="Default" />
       <updated>1628305099258</updated>
       <workItem from="1628305101973" duration="7819000" />
-      <workItem from="1628328016103" duration="633000" />
+      <workItem from="1628328016103" duration="863000" />
+      <workItem from="1628385831405" duration="742000" />
+      <workItem from="1628386932902" duration="3731000" />
+      <workItem from="1628563870064" duration="7299000" />
     </task>
     <task id="LOCAL-00001" summary="搭建基本框架，登录和查找书籍可简单使用">
       <created>1628328278788</created>
@@ -52,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628328278788</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="搭建基本框架，登录和查找书籍可简单使用">
+      <created>1628328666863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628328666863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +107,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="搭建基本框架，登录和查找书籍可简单使用" />
